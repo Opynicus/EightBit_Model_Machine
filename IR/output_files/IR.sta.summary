@@ -1,0 +1,53 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'REGQ[0]'
+Slack : -5.078
+TNS   : -24.140
+
+Type  : Slow 1200mV 85C Model Hold 'REGQ[0]'
+Slack : -0.049
+TNS   : -0.066
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -14.896
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'REGQ[0]'
+Slack : 0.158
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'REGQ[0]'
+Slack : -5.157
+TNS   : -24.875
+
+Type  : Slow 1200mV 0C Model Hold 'REGQ[0]'
+Slack : -0.034
+TNS   : -0.044
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -14.896
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'REGQ[0]'
+Slack : -0.090
+TNS   : -0.742
+
+Type  : Fast 1200mV 0C Model Setup 'REGQ[0]'
+Slack : -1.983
+TNS   : -8.303
+
+Type  : Fast 1200mV 0C Model Hold 'REGQ[0]'
+Slack : 0.026
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -11.704
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'REGQ[0]'
+Slack : 0.272
+TNS   : 0.000
+
+------------------------------------------------------------

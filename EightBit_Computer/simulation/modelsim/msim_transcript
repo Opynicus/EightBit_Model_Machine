@@ -1,0 +1,198 @@
+# Reading E:/FPGA/modelsim_ase/tcl/vsim/pref.tcl
+# ERROR: No extended dataflow license exists
+# do EightBit_Computer_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying E:/FPGA/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/eightbit_computer.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:12:01 on Jul 10,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/eightbit_computer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity EightBit_Computer
+# -- Compiling architecture EightBit_Computer_arch of EightBit_Computer
+# End time: 15:12:01 on Jul 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/clk_generator.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:12:01 on Jul 10,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/clk_generator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity CLK_Generator
+# -- Compiling architecture CLK_Generator_arch of CLK_Generator
+# End time: 15:12:02 on Jul 10,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/counter.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:12:02 on Jul 10,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity counter
+# -- Compiling architecture counter_arch of counter
+# End time: 15:12:02 on Jul 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/ctrl.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:12:02 on Jul 10,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/ctrl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity CTRL
+# -- Compiling architecture CTRL_arch of CTRL
+# End time: 15:12:03 on Jul 10,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/alu.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:12:03 on Jul 10,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity ALU
+# -- Compiling architecture ALU_arch of ALU
+# End time: 15:12:03 on Jul 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/acc.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:12:03 on Jul 10,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/acc.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ACC
+# -- Compiling architecture ACC_arch of ACC
+# End time: 15:12:03 on Jul 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/dr.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:12:04 on Jul 10,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/dr.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DR
+# -- Compiling architecture DR_arch of DR
+# End time: 15:12:04 on Jul 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/pc.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:12:04 on Jul 10,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/pc.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity PC
+# -- Compiling architecture PC_arch of PC
+# End time: 15:12:04 on Jul 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/mar.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:12:04 on Jul 10,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/mar.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MAR
+# -- Compiling architecture MAR_arch of MAR
+# End time: 15:12:05 on Jul 10,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/ir.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:12:05 on Jul 10,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/ir.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity IR
+# -- Compiling architecture IR_arch of IR
+# End time: 15:12:05 on Jul 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/ram.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:12:05 on Jul 10,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/ram.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity RAM
+# -- Compiling architecture RAM_arch of RAM
+# End time: 15:12:05 on Jul 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/EightBit_Computer_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:12:06 on Jul 10,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/EightBit_Computer_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity EightBit_Computer_tb
+# -- Compiling architecture EightBit_Computer_tb_arch of EightBit_Computer_tb
+# End time: 15:12:06 on Jul 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  EightBit_Computer_tb
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" EightBit_Computer_tb 
+# Start time: 15:12:09 on Jul 10,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.eightbit_computer_tb(eightbit_computer_tb_arch)
+# Loading work.eightbit_computer(eightbit_computer_arch)
+# Loading work.clk_generator(clk_generator_arch)
+# Loading work.counter(counter_arch)
+# Loading work.ctrl(ctrl_arch)
+# Loading work.alu(alu_arch)
+# Loading work.acc(acc_arch)
+# Loading work.dr(dr_arch)
+# Loading work.pc(pc_arch)
+# Loading work.mar(mar_arch)
+# Loading work.ir(ir_arch)
+# Loading work.ram(ram_arch)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /eightbit_computer_tb/EUT/M9
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /eightbit_computer_tb/EUT/M9
+# Break key hit
+# Simulation stop requested.
+# End time: 15:31:28 on Jul 10,2021, Elapsed time: 0:19:19
+# Errors: 0, Warnings: 2

@@ -1,0 +1,28 @@
+LD A,6
+ADD A,7    0D
+
+LD A,7
+SUB A,6      01
+
+LD A,6
+AND A,7   06
+OR A,7      07
+
+LD A,7
+OR A,8     0F
+
+LD A,8
+XOR A,1     09
+
+
+LD A,4
+NOT A      FB
+
+LD A,4
+NEG A       FC
+
+LD A,3
+SHL          06
+
+LD A,3
+SHR           01

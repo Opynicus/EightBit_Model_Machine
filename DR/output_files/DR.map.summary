@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Jun 07 17:05:48 2021
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Standard Edition
+Revision Name : DR
+Top-level Entity Name : DR
+Family : Cyclone IV E
+Total logic elements : 8
+    Total combinational functions : 0
+    Dedicated logic registers : 8
+Total registers : 8
+Total pins : 19
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

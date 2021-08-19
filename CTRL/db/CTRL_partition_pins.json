@@ -1,0 +1,113 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "IPC",
+					"strict" : false
+				},
+				{
+					"name" : "IMAR",
+					"strict" : false
+				},
+				{
+					"name" : "IDR",
+					"strict" : false
+				},
+				{
+					"name" : "EDR",
+					"strict" : false
+				},
+				{
+					"name" : "IA",
+					"strict" : false
+				},
+				{
+					"name" : "EA",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_ADD",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_SUB",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_AND",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_SHL",
+					"strict" : false
+				},
+				{
+					"name" : "ESUM",
+					"strict" : false
+				},
+				{
+					"name" : "IIR",
+					"strict" : false
+				},
+				{
+					"name" : "T5",
+					"strict" : false
+				},
+				{
+					"name" : "T2",
+					"strict" : false
+				},
+				{
+					"name" : "HALT",
+					"strict" : false
+				},
+				{
+					"name" : "cmd_add",
+					"strict" : false
+				},
+				{
+					"name" : "cmd_sub",
+					"strict" : false
+				},
+				{
+					"name" : "cmd_and",
+					"strict" : false
+				},
+				{
+					"name" : "cmd_LD",
+					"strict" : false
+				},
+				{
+					"name" : "T0",
+					"strict" : false
+				},
+				{
+					"name" : "T3",
+					"strict" : false
+				},
+				{
+					"name" : "cmd_shl",
+					"strict" : false
+				},
+				{
+					"name" : "T1",
+					"strict" : false
+				},
+				{
+					"name" : "T4",
+					"strict" : false
+				},
+				{
+					"name" : "T6",
+					"strict" : false
+				},
+				{
+					"name" : "T7",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

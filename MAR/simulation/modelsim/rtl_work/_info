@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ZTL/Desktop/model_computer/MAR/simulation/modelsim
+Emar
+Z1 w1623055591
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/Users/ZTL/Desktop/model_computer/MAR/MAR.vhd
+Z5 FC:/Users/ZTL/Desktop/model_computer/MAR/MAR.vhd
+l0
+L3
+V2E:WoN>M0X<886OZO:Q[<0
+!s100 MAbz=Z8fQdEc3OAa?oTQk2
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1625486140
+!i10b 1
+Z8 !s108 1625486140.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/ZTL/Desktop/model_computer/MAR/MAR.vhd|
+Z10 !s107 C:/Users/ZTL/Desktop/model_computer/MAR/MAR.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Amar_arch
+R2
+R3
+DEx4 work 3 mar 0 22 2E:WoN>M0X<886OZO:Q[<0
+l12
+L11
+V4?`2VI8WD4<QWAa5UgmBc0
+!s100 Aka^`c4JjFUAC6Sj=4FR]2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Emar_tb
+Z13 w1623055774
+Z14 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z15 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z16 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R2
+R3
+R0
+Z17 8C:/Users/ZTL/Desktop/model_computer/MAR/MAR_tb.vhd
+Z18 FC:/Users/ZTL/Desktop/model_computer/MAR/MAR_tb.vhd
+l0
+L6
+VkPH_<[14=z6ZmOjdIJ4z11
+!s100 ]Y;n2KCXbHBGzl7>YOZfG2
+R6
+31
+R7
+!i10b 1
+R8
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/ZTL/Desktop/model_computer/MAR/MAR_tb.vhd|
+Z20 !s107 C:/Users/ZTL/Desktop/model_computer/MAR/MAR_tb.vhd|
+!i113 1
+R11
+R12
+Amar_tb_arch
+R14
+R15
+R16
+R2
+R3
+DEx4 work 6 mar_tb 0 22 kPH_<[14=z6ZmOjdIJ4z11
+l20
+L9
+VS8PW16T7b_6YU;jZXGW573
+!s100 nzcWo=AlWj4oe^GGWW<HO3
+R6
+31
+R7
+!i10b 1
+R8
+R19
+R20
+!i113 1
+R11
+R12

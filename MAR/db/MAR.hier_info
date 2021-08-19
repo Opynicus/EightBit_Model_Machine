@@ -1,0 +1,19 @@
+|MAR
+Address_In[0] => Address_Out[0]~reg0.DATAIN
+Address_In[1] => Address_Out[1]~reg0.DATAIN
+Address_In[2] => Address_Out[2]~reg0.DATAIN
+Address_In[3] => Address_Out[3]~reg0.DATAIN
+IMAR => Address_Out[0]~reg0.ENA
+IMAR => Address_Out[1]~reg0.ENA
+IMAR => Address_Out[2]~reg0.ENA
+IMAR => Address_Out[3]~reg0.ENA
+CLK => Address_Out[0]~reg0.CLK
+CLK => Address_Out[1]~reg0.CLK
+CLK => Address_Out[2]~reg0.CLK
+CLK => Address_Out[3]~reg0.CLK
+Address_Out[0] <= Address_Out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Address_Out[1] <= Address_Out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Address_Out[2] <= Address_Out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Address_Out[3] <= Address_Out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

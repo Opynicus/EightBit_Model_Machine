@@ -1,0 +1,603 @@
+Analysis & Synthesis report for EightBit
+Wed Jun 30 20:27:50 2021
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. Registers Removed During Synthesis
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
+ 12. Inverted Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Port Connectivity Checks: "RAM:M9"
+ 15. Post-Synthesis Netlist Statistics for Top Partition
+ 16. Elapsed Time Per Partition
+ 17. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed Jun 30 20:27:50 2021           ;
+; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition ;
+; Revision Name                      ; EightBit                                        ;
+; Top-level Entity Name              ; EightBit                                        ;
+; Family                             ; Cyclone IV E                                    ;
+; Total logic elements               ; 183                                             ;
+;     Total combinational functions  ; 160                                             ;
+;     Dedicated logic registers      ; 71                                              ;
+; Total registers                    ; 71                                              ;
+; Total pins                         ; 38                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE6E22C8        ;                    ;
+; Top-level entity name                                                      ; EightBit           ; EightBit           ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                              ; Enable             ; Enable             ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                                        ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                     ;
++----------------------------------+-----------------+-----------------------+---------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                        ; Library ;
++----------------------------------+-----------------+-----------------------+---------------------------------------------------------------------+---------+
+; EightBit.vhd                     ; yes             ; User VHDL File        ; C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/EightBit.vhd      ;         ;
+; clk_generator.vhd                ; yes             ; Auto-Found VHDL File  ; C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/clk_generator.vhd ;         ;
+; counter.vhd                      ; yes             ; Auto-Found VHDL File  ; C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/counter.vhd       ;         ;
+; ctrl.vhd                         ; yes             ; Auto-Found VHDL File  ; C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ctrl.vhd          ;         ;
+; alu.vhd                          ; yes             ; Auto-Found VHDL File  ; C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/alu.vhd           ;         ;
+; acc.vhd                          ; yes             ; Auto-Found VHDL File  ; C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/acc.vhd           ;         ;
+; dr.vhd                           ; yes             ; Auto-Found VHDL File  ; C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/dr.vhd            ;         ;
+; pc.vhd                           ; yes             ; Auto-Found VHDL File  ; C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/pc.vhd            ;         ;
+; mar.vhd                          ; yes             ; Auto-Found VHDL File  ; C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/mar.vhd           ;         ;
+; ir.vhd                           ; yes             ; Auto-Found VHDL File  ; C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ir.vhd            ;         ;
+; ram.vhd                          ; yes             ; Auto-Found VHDL File  ; C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ram.vhd           ;         ;
+; decode.vhd                       ; yes             ; Auto-Found VHDL File  ; C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/decode.vhd        ;         ;
+; display.vhd                      ; yes             ; Auto-Found VHDL File  ; C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/display.vhd       ;         ;
++----------------------------------+-----------------+-----------------------+---------------------------------------------------------------------+---------+
+
+
++-------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                 ;
++---------------------------------------------+---------------+
+; Resource                                    ; Usage         ;
++---------------------------------------------+---------------+
+; Estimated Total logic elements              ; 183           ;
+;                                             ;               ;
+; Total combinational functions               ; 160           ;
+; Logic element usage by number of LUT inputs ;               ;
+;     -- 4 input functions                    ; 69            ;
+;     -- 3 input functions                    ; 34            ;
+;     -- <=2 input functions                  ; 57            ;
+;                                             ;               ;
+; Logic elements by mode                      ;               ;
+;     -- normal mode                          ; 119           ;
+;     -- arithmetic mode                      ; 41            ;
+;                                             ;               ;
+; Total registers                             ; 71            ;
+;     -- Dedicated logic registers            ; 71            ;
+;     -- I/O registers                        ; 0             ;
+;                                             ;               ;
+; I/O pins                                    ; 38            ;
+;                                             ;               ;
+; Embedded Multiplier 9-bit elements          ; 0             ;
+;                                             ;               ;
+; Maximum fan-out node                        ; CLK_50M~input ;
+; Maximum fan-out                             ; 37            ;
+; Total fan-out                               ; 734           ;
+; Average fan-out                             ; 2.39          ;
++---------------------------------------------+---------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                               ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------+---------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name        ; Entity Name   ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------+---------------+--------------+
+; |EightBit                  ; 160 (0)             ; 71 (0)                    ; 0           ; 0            ; 0       ; 0         ; 38   ; 0            ; |EightBit                  ; EightBit      ; work         ;
+;    |ACC:M4|                ; 0 (0)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EightBit|ACC:M4           ; ACC           ; work         ;
+;    |ALU:M3|                ; 39 (39)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EightBit|ALU:M3           ; ALU           ; work         ;
+;    |CLK_Generator:M0|      ; 8 (8)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EightBit|CLK_Generator:M0 ; CLK_Generator ; work         ;
+;    |CTRL:M2|               ; 18 (18)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EightBit|CTRL:M2          ; CTRL          ; work         ;
+;    |DR:M5|                 ; 0 (0)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EightBit|DR:M5            ; DR            ; work         ;
+;    |IR:M8|                 ; 14 (14)             ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EightBit|IR:M8            ; IR            ; work         ;
+;    |MAR:M7|                ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EightBit|MAR:M7           ; MAR           ; work         ;
+;    |PC:M6|                 ; 5 (5)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EightBit|PC:M6            ; PC            ; work         ;
+;    |RAM:M9|                ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EightBit|RAM:M9           ; RAM           ; work         ;
+;    |counter:M1|            ; 2 (2)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EightBit|counter:M1       ; counter       ; work         ;
+;    |decode:D1|             ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EightBit|decode:D1        ; decode        ; work         ;
+;    |display:D2|            ; 55 (55)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EightBit|display:D2       ; display       ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------+---------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                    ;
++-----------------------------------------------------+-------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal     ; Free of Timing Hazards ;
++-----------------------------------------------------+-------------------------+------------------------+
+; CLK_Generator:M0|CLK_TEMP                           ; CLK_Generator:M0|Equal0 ; yes                    ;
+; IR:M8|cmd_ld                                        ; IR:M8|Mux6              ; yes                    ;
+; IR:M8|cmd_add                                       ; IR:M8|Mux6              ; yes                    ;
+; IR:M8|cmd_sub                                       ; IR:M8|Mux6              ; yes                    ;
+; IR:M8|cmd_and                                       ; IR:M8|Mux6              ; yes                    ;
+; IR:M8|cmd_shl                                       ; IR:M8|Mux6              ; yes                    ;
+; IR:M8|HALT                                          ; IR:M8|Mux6              ; yes                    ;
+; ALU:M3|acc1[0]                                      ; ALU:M3|acc1[7]          ; yes                    ;
+; ALU:M3|acc1[1]                                      ; ALU:M3|acc1[7]          ; yes                    ;
+; ALU:M3|acc1[2]                                      ; ALU:M3|acc1[7]          ; yes                    ;
+; ALU:M3|acc1[3]                                      ; ALU:M3|acc1[7]          ; yes                    ;
+; ALU:M3|acc1[4]                                      ; ALU:M3|acc1[7]          ; yes                    ;
+; ALU:M3|acc1[5]                                      ; ALU:M3|acc1[7]          ; yes                    ;
+; ALU:M3|acc1[6]                                      ; ALU:M3|acc1[7]          ; yes                    ;
+; ALU:M3|acc1[7]                                      ; ALU:M3|acc1[7]          ; yes                    ;
+; CTRL:M2|ALU_ADD                                     ; IR:M8|HALT              ; yes                    ;
+; CTRL:M2|ALU_AND                                     ; IR:M8|HALT              ; yes                    ;
+; CTRL:M2|ALU_SUB                                     ; IR:M8|HALT              ; yes                    ;
+; CTRL:M2|ALU_SHL                                     ; IR:M8|HALT              ; yes                    ;
+; CTRL:M2|IA                                          ; IR:M8|HALT              ; yes                    ;
+; CTRL:M2|IDR                                         ; IR:M8|HALT              ; yes                    ;
+; CTRL:M2|IIR                                         ; IR:M8|HALT              ; yes                    ;
+; CTRL:M2|IMAR                                        ; IR:M8|HALT              ; yes                    ;
+; Number of user-specified and inferred latches = 23  ;                         ;                        ;
++-----------------------------------------------------+-------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; DR:M5|REGQ[4,5]                       ; Stuck at GND due to stuck port data_in ;
+; display:D2|sel[1,2]                   ; Stuck at GND due to stuck port data_in ;
+; ACC:M4|REGQ[4,5]                      ; Stuck at GND due to stuck port data_in ;
+; IR:M8|REGQ[4,5]                       ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 8 ;                                        ;
++---------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                        ;
++---------------+---------------------------+----------------------------------------+
+; Register name ; Reason for Removal        ; Registers Removed due to This Register ;
++---------------+---------------------------+----------------------------------------+
+; DR:M5|REGQ[4] ; Stuck at GND              ; IR:M8|REGQ[4]                          ;
+;               ; due to stuck port data_in ;                                        ;
+; DR:M5|REGQ[5] ; Stuck at GND              ; IR:M8|REGQ[5]                          ;
+;               ; due to stuck port data_in ;                                        ;
++---------------+---------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 71    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 17    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 22    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; counter:M1|TEMP[0]                     ; 2       ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |EightBit|ALU:M3|acc1[4]   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
++----------------------------------------+
+; Port Connectivity Checks: "RAM:M9"     ;
++------+-------+----------+--------------+
+; Port ; Type  ; Severity ; Details      ;
++------+-------+----------+--------------+
+; din  ; Input ; Info     ; Stuck at GND ;
++------+-------+----------+--------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 38                          ;
+; cycloneiii_ff         ; 71                          ;
+;     CLR               ; 17                          ;
+;     ENA               ; 22                          ;
+;     plain             ; 32                          ;
+; cycloneiii_lcell_comb ; 164                         ;
+;     arith             ; 41                          ;
+;         2 data inputs ; 35                          ;
+;         3 data inputs ; 6                           ;
+;     normal            ; 123                         ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 7                           ;
+;         2 data inputs ; 17                          ;
+;         3 data inputs ; 28                          ;
+;         4 data inputs ; 69                          ;
+;                       ;                             ;
+; Max LUT depth         ; 6.70                        ;
+; Average LUT depth     ; 3.84                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
+    Info: Processing started: Wed Jun 30 20:27:31 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off EightBit -c EightBit
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file eightbit.vhd
+    Info (12022): Found design unit 1: EightBit-EightBit_arch File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/EightBit.vhd Line: 15
+    Info (12023): Found entity 1: EightBit File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/EightBit.vhd Line: 4
+Info (12127): Elaborating entity "EightBit" for the top level hierarchy
+Warning (12125): Using design file clk_generator.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: CLK_Generator-CLK_Generator_arch File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/clk_generator.vhd Line: 10
+    Info (12023): Found entity 1: CLK_Generator File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/clk_generator.vhd Line: 4
+Info (12128): Elaborating entity "CLK_Generator" for hierarchy "CLK_Generator:M0" File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/EightBit.vhd Line: 125
+Warning (10631): VHDL Process Statement warning at clk_generator.vhd(14): inferring latch(es) for signal or variable "CLK_TEMP", which holds its previous value in one or more paths through the process File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/clk_generator.vhd Line: 14
+Info (10041): Inferred latch for "CLK_TEMP" at clk_generator.vhd(14) File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/clk_generator.vhd Line: 14
+Warning (12125): Using design file counter.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: counter-counter_arch File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/counter.vhd Line: 12
+    Info (12023): Found entity 1: counter File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/counter.vhd Line: 6
+Info (12128): Elaborating entity "COUNTER" for hierarchy "COUNTER:M1" File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/EightBit.vhd Line: 126
+Warning (12125): Using design file ctrl.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: CTRL-CTRL_arch File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ctrl.vhd Line: 14
+    Info (12023): Found entity 1: CTRL File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ctrl.vhd Line: 6
+Info (12128): Elaborating entity "CTRL" for hierarchy "CTRL:M2" File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/EightBit.vhd Line: 127
+Warning (10631): VHDL Process Statement warning at ctrl.vhd(16): inferring latch(es) for signal or variable "IMAR", which holds its previous value in one or more paths through the process File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ctrl.vhd Line: 16
+Warning (10631): VHDL Process Statement warning at ctrl.vhd(16): inferring latch(es) for signal or variable "IIR", which holds its previous value in one or more paths through the process File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ctrl.vhd Line: 16
+Warning (10631): VHDL Process Statement warning at ctrl.vhd(16): inferring latch(es) for signal or variable "IA", which holds its previous value in one or more paths through the process File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ctrl.vhd Line: 16
+Warning (10631): VHDL Process Statement warning at ctrl.vhd(16): inferring latch(es) for signal or variable "IDR", which holds its previous value in one or more paths through the process File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ctrl.vhd Line: 16
+Warning (10631): VHDL Process Statement warning at ctrl.vhd(16): inferring latch(es) for signal or variable "ALU_ADD", which holds its previous value in one or more paths through the process File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ctrl.vhd Line: 16
+Warning (10631): VHDL Process Statement warning at ctrl.vhd(16): inferring latch(es) for signal or variable "ALU_SUB", which holds its previous value in one or more paths through the process File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ctrl.vhd Line: 16
+Warning (10631): VHDL Process Statement warning at ctrl.vhd(16): inferring latch(es) for signal or variable "ALU_AND", which holds its previous value in one or more paths through the process File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ctrl.vhd Line: 16
+Warning (10631): VHDL Process Statement warning at ctrl.vhd(16): inferring latch(es) for signal or variable "ALU_SHL", which holds its previous value in one or more paths through the process File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ctrl.vhd Line: 16
+Warning (10631): VHDL Process Statement warning at ctrl.vhd(16): inferring latch(es) for signal or variable "EA", which holds its previous value in one or more paths through the process File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ctrl.vhd Line: 16
+Warning (10631): VHDL Process Statement warning at ctrl.vhd(16): inferring latch(es) for signal or variable "EDR", which holds its previous value in one or more paths through the process File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ctrl.vhd Line: 16
+Info (10041): Inferred latch for "EDR" at ctrl.vhd(16) File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ctrl.vhd Line: 16
+Info (10041): Inferred latch for "EA" at ctrl.vhd(16) File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ctrl.vhd Line: 16
+Info (10041): Inferred latch for "ALU_SHL" at ctrl.vhd(16) File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ctrl.vhd Line: 16
+Info (10041): Inferred latch for "ALU_AND" at ctrl.vhd(16) File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ctrl.vhd Line: 16
+Info (10041): Inferred latch for "ALU_SUB" at ctrl.vhd(16) File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ctrl.vhd Line: 16
+Info (10041): Inferred latch for "ALU_ADD" at ctrl.vhd(16) File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ctrl.vhd Line: 16
+Info (10041): Inferred latch for "IDR" at ctrl.vhd(16) File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ctrl.vhd Line: 16
+Info (10041): Inferred latch for "IA" at ctrl.vhd(16) File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ctrl.vhd Line: 16
+Info (10041): Inferred latch for "IIR" at ctrl.vhd(16) File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ctrl.vhd Line: 16
+Info (10041): Inferred latch for "IMAR" at ctrl.vhd(16) File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ctrl.vhd Line: 16
+Warning (12125): Using design file alu.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: ALU-DATAFLOW File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/alu.vhd Line: 18
+    Info (12023): Found entity 1: ALU File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/alu.vhd Line: 6
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:M3" File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/EightBit.vhd Line: 129
+Warning (10492): VHDL Process Statement warning at alu.vhd(28): signal "acc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/alu.vhd Line: 28
+Warning (10492): VHDL Process Statement warning at alu.vhd(30): signal "acc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/alu.vhd Line: 30
+Warning (10492): VHDL Process Statement warning at alu.vhd(32): signal "acc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/alu.vhd Line: 32
+Warning (10492): VHDL Process Statement warning at alu.vhd(34): signal "acc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/alu.vhd Line: 34
+Warning (10631): VHDL Process Statement warning at alu.vhd(22): inferring latch(es) for signal or variable "acc1", which holds its previous value in one or more paths through the process File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/alu.vhd Line: 22
+Info (10041): Inferred latch for "acc1[0]" at alu.vhd(22) File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/alu.vhd Line: 22
+Info (10041): Inferred latch for "acc1[1]" at alu.vhd(22) File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/alu.vhd Line: 22
+Info (10041): Inferred latch for "acc1[2]" at alu.vhd(22) File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/alu.vhd Line: 22
+Info (10041): Inferred latch for "acc1[3]" at alu.vhd(22) File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/alu.vhd Line: 22
+Info (10041): Inferred latch for "acc1[4]" at alu.vhd(22) File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/alu.vhd Line: 22
+Info (10041): Inferred latch for "acc1[5]" at alu.vhd(22) File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/alu.vhd Line: 22
+Info (10041): Inferred latch for "acc1[6]" at alu.vhd(22) File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/alu.vhd Line: 22
+Info (10041): Inferred latch for "acc1[7]" at alu.vhd(22) File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/alu.vhd Line: 22
+Warning (12125): Using design file acc.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: ACC-DATAFLOW File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/acc.vhd Line: 13
+    Info (12023): Found entity 1: ACC File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/acc.vhd Line: 4
+Info (12128): Elaborating entity "ACC" for hierarchy "ACC:M4" File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/EightBit.vhd Line: 130
+Warning (12125): Using design file dr.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: DR-DATAFLOW File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/dr.vhd Line: 11
+    Info (12023): Found entity 1: DR File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/dr.vhd Line: 3
+Info (12128): Elaborating entity "DR" for hierarchy "DR:M5" File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/EightBit.vhd Line: 131
+Warning (12125): Using design file pc.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: PC-A File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/pc.vhd Line: 11
+    Info (12023): Found entity 1: PC File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/pc.vhd Line: 5
+Info (12128): Elaborating entity "PC" for hierarchy "PC:M6" File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/EightBit.vhd Line: 132
+Warning (12125): Using design file mar.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: MAR-A File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/mar.vhd Line: 11
+    Info (12023): Found entity 1: MAR File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/mar.vhd Line: 3
+Info (12128): Elaborating entity "MAR" for hierarchy "MAR:M7" File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/EightBit.vhd Line: 133
+Warning (12125): Using design file ir.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: IR-DATAFLOW File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ir.vhd Line: 11
+    Info (12023): Found entity 1: IR File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ir.vhd Line: 3
+Info (12128): Elaborating entity "IR" for hierarchy "IR:M8" File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/EightBit.vhd Line: 134
+Warning (10631): VHDL Process Statement warning at ir.vhd(23): inferring latch(es) for signal or variable "cmd_ld", which holds its previous value in one or more paths through the process File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ir.vhd Line: 23
+Warning (10631): VHDL Process Statement warning at ir.vhd(23): inferring latch(es) for signal or variable "cmd_add", which holds its previous value in one or more paths through the process File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ir.vhd Line: 23
+Warning (10631): VHDL Process Statement warning at ir.vhd(23): inferring latch(es) for signal or variable "cmd_sub", which holds its previous value in one or more paths through the process File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ir.vhd Line: 23
+Warning (10631): VHDL Process Statement warning at ir.vhd(23): inferring latch(es) for signal or variable "cmd_and", which holds its previous value in one or more paths through the process File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ir.vhd Line: 23
+Warning (10631): VHDL Process Statement warning at ir.vhd(23): inferring latch(es) for signal or variable "cmd_shl", which holds its previous value in one or more paths through the process File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ir.vhd Line: 23
+Warning (10631): VHDL Process Statement warning at ir.vhd(23): inferring latch(es) for signal or variable "HALT", which holds its previous value in one or more paths through the process File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ir.vhd Line: 23
+Info (10041): Inferred latch for "HALT" at ir.vhd(23) File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ir.vhd Line: 23
+Info (10041): Inferred latch for "cmd_shl" at ir.vhd(23) File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ir.vhd Line: 23
+Info (10041): Inferred latch for "cmd_and" at ir.vhd(23) File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ir.vhd Line: 23
+Info (10041): Inferred latch for "cmd_sub" at ir.vhd(23) File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ir.vhd Line: 23
+Info (10041): Inferred latch for "cmd_add" at ir.vhd(23) File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ir.vhd Line: 23
+Info (10041): Inferred latch for "cmd_ld" at ir.vhd(23) File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ir.vhd Line: 23
+Warning (12125): Using design file ram.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: RAM-A File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ram.vhd Line: 13
+    Info (12023): Found entity 1: RAM File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ram.vhd Line: 6
+Info (12128): Elaborating entity "RAM" for hierarchy "RAM:M9" File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/EightBit.vhd Line: 135
+Warning (12125): Using design file decode.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: decode-part File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/decode.vhd Line: 10
+    Info (12023): Found entity 1: decode File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/decode.vhd Line: 4
+Info (12128): Elaborating entity "decode" for hierarchy "decode:D1" File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/EightBit.vhd Line: 137
+Warning (10492): VHDL Process Statement warning at decode.vhd(32): signal "output" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/decode.vhd Line: 32
+Warning (10492): VHDL Process Statement warning at decode.vhd(33): signal "output" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/decode.vhd Line: 33
+Warning (12125): Using design file display.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: display-part File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/display.vhd Line: 14
+    Info (12023): Found entity 1: display File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/display.vhd Line: 4
+Info (12128): Elaborating entity "display" for hierarchy "display:D2" File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/EightBit.vhd Line: 138
+Warning (10492): VHDL Process Statement warning at display.vhd(29): signal "sel" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/display.vhd Line: 29
+Warning (10492): VHDL Process Statement warning at display.vhd(30): signal "hex_0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/display.vhd Line: 30
+Warning (10492): VHDL Process Statement warning at display.vhd(31): signal "hex_1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/display.vhd Line: 31
+Warning (10631): VHDL Process Statement warning at display.vhd(17): inferring latch(es) for signal or variable "cout", which holds its previous value in one or more paths through the process File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/display.vhd Line: 17
+Info (10041): Inferred latch for "cout[0]" at display.vhd(17) File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/display.vhd Line: 17
+Info (10041): Inferred latch for "cout[1]" at display.vhd(17) File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/display.vhd Line: 17
+Info (10041): Inferred latch for "cout[2]" at display.vhd(17) File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/display.vhd Line: 17
+Info (10041): Inferred latch for "cout[3]" at display.vhd(17) File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/display.vhd Line: 17
+Info (10041): Inferred latch for "cout[4]" at display.vhd(17) File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/display.vhd Line: 17
+Info (10041): Inferred latch for "cout[5]" at display.vhd(17) File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/display.vhd Line: 17
+Info (10041): Inferred latch for "cout[6]" at display.vhd(17) File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/display.vhd Line: 17
+Info (10041): Inferred latch for "cout[7]" at display.vhd(17) File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/display.vhd Line: 17
+Warning (14026): LATCH primitive "display:D2|cout[0]" is permanently enabled File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/display.vhd Line: 17
+Warning (14026): LATCH primitive "display:D2|cout[1]" is permanently enabled File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/display.vhd Line: 17
+Warning (14026): LATCH primitive "display:D2|cout[2]" is permanently enabled File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/display.vhd Line: 17
+Warning (14026): LATCH primitive "display:D2|cout[3]" is permanently enabled File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/display.vhd Line: 17
+Warning (14026): LATCH primitive "display:D2|cout[4]" is permanently enabled File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/display.vhd Line: 17
+Warning (14026): LATCH primitive "display:D2|cout[5]" is permanently enabled File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/display.vhd Line: 17
+Warning (14026): LATCH primitive "display:D2|cout[6]" is permanently enabled File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/display.vhd Line: 17
+Warning (14026): LATCH primitive "display:D2|cout[7]" is permanently enabled File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/display.vhd Line: 17
+Warning (13044): Always-enabled tri-state buffer(s) removed
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "ACC:M4|DATA_OUT[0]" to the node "r_out[0]" into a wire File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/acc.vhd Line: 10
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "ACC:M4|DATA_OUT[1]" to the node "r_out[1]" into a wire File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/acc.vhd Line: 10
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "ACC:M4|DATA_OUT[2]" to the node "r_out[2]" into a wire File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/acc.vhd Line: 10
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "ACC:M4|DATA_OUT[3]" to the node "r_out[3]" into a wire File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/acc.vhd Line: 10
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "ACC:M4|DATA_OUT[4]" to the node "r_out[4]" into a wire File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/acc.vhd Line: 10
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "ACC:M4|DATA_OUT[5]" to the node "r_out[5]" into a wire File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/acc.vhd Line: 10
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "ACC:M4|DATA_OUT[6]" to the node "r_out[6]" into a wire File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/acc.vhd Line: 10
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "ACC:M4|DATA_OUT[7]" to the node "r_out[7]" into a wire File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/acc.vhd Line: 10
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "DR:M5|DATA_OUT[0]" to the node "d_out[0]" into a wire File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/dr.vhd Line: 9
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "DR:M5|DATA_OUT[1]" to the node "d_out[1]" into a wire File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/dr.vhd Line: 9
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "DR:M5|DATA_OUT[2]" to the node "d_out[2]" into a wire File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/dr.vhd Line: 9
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "DR:M5|DATA_OUT[3]" to the node "d_out[3]" into a wire File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/dr.vhd Line: 9
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "DR:M5|DATA_OUT[6]" to the node "d_out[6]" into a wire File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/dr.vhd Line: 9
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "DR:M5|DATA_OUT[7]" to the node "d_out[7]" into a wire File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/dr.vhd Line: 9
+Warning (13050): Open-drain buffer(s) that do not directly drive top-level pin(s) are removed
+    Warning (13051): Converted the fanout from the open-drain buffer "DR:M5|DATA_OUT[4]" to the node "ALU:M3|acc1" into a wire File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/dr.vhd Line: 9
+    Warning (13051): Converted the fanout from the open-drain buffer "DR:M5|DATA_OUT[5]" to the node "ALU:M3|acc1" into a wire File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/dr.vhd Line: 9
+Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
+    Warning (13047): Converted the fan-out from the tri-state buffer "ACC:M4|DATA_OUT[0]" to the node "ALU:M3|acc1[1]" into an OR gate File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/acc.vhd Line: 10
+    Warning (13047): Converted the fan-out from the tri-state buffer "ACC:M4|DATA_OUT[1]" to the node "ALU:M3|acc1" into an OR gate File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/acc.vhd Line: 10
+    Warning (13047): Converted the fan-out from the tri-state buffer "ACC:M4|DATA_OUT[2]" to the node "ALU:M3|acc1" into an OR gate File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/acc.vhd Line: 10
+    Warning (13047): Converted the fan-out from the tri-state buffer "ACC:M4|DATA_OUT[3]" to the node "ALU:M3|acc1" into an OR gate File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/acc.vhd Line: 10
+    Warning (13047): Converted the fan-out from the tri-state buffer "ACC:M4|DATA_OUT[4]" to the node "ALU:M3|acc1" into an OR gate File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/acc.vhd Line: 10
+    Warning (13047): Converted the fan-out from the tri-state buffer "ACC:M4|DATA_OUT[5]" to the node "ALU:M3|acc1" into an OR gate File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/acc.vhd Line: 10
+    Warning (13047): Converted the fan-out from the tri-state buffer "ACC:M4|DATA_OUT[6]" to the node "ALU:M3|acc1" into an OR gate File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/acc.vhd Line: 10
+    Warning (13047): Converted the fan-out from the tri-state buffer "ACC:M4|DATA_OUT[7]" to the node "ALU:M3|acc1" into an OR gate File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/acc.vhd Line: 10
+    Warning (13047): Converted the fan-out from the tri-state buffer "DR:M5|DATA_OUT[0]" to the node "ACC:M4|REGQ[0]" into an OR gate File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/dr.vhd Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "DR:M5|DATA_OUT[1]" to the node "ALU:M3|acc1" into an OR gate File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/dr.vhd Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "DR:M5|DATA_OUT[2]" to the node "ALU:M3|acc1" into an OR gate File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/dr.vhd Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "DR:M5|DATA_OUT[3]" to the node "ALU:M3|acc1" into an OR gate File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/dr.vhd Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "DR:M5|DATA_OUT[6]" to the node "ALU:M3|acc1" into an OR gate File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/dr.vhd Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "DR:M5|DATA_OUT[7]" to the node "ALU:M3|acc1" into an OR gate File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/dr.vhd Line: 9
+Warning (13030): Reduced the following open-drain buffers that are fed by GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "DR:M5|DATA_OUT[4]" to the output pin "d_out[4]" to GND File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/dr.vhd Line: 9
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "DR:M5|DATA_OUT[5]" to the output pin "d_out[5]" to GND File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/dr.vhd Line: 9
+Warning (13012): Latch IR:M8|cmd_ld has unsafe behavior File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ir.vhd Line: 8
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR:M8|REGQ[1] File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ir.vhd Line: 16
+Warning (13012): Latch IR:M8|cmd_add has unsafe behavior File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ir.vhd Line: 8
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR:M8|REGQ[1] File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ir.vhd Line: 16
+Warning (13012): Latch IR:M8|cmd_sub has unsafe behavior File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ir.vhd Line: 8
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR:M8|REGQ[1] File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ir.vhd Line: 16
+Warning (13012): Latch IR:M8|cmd_and has unsafe behavior File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ir.vhd Line: 8
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR:M8|REGQ[1] File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ir.vhd Line: 16
+Warning (13012): Latch IR:M8|cmd_shl has unsafe behavior File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ir.vhd Line: 8
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR:M8|REGQ[1] File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ir.vhd Line: 16
+Warning (13012): Latch IR:M8|HALT has unsafe behavior File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ir.vhd Line: 8
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR:M8|REGQ[1] File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ir.vhd Line: 16
+Warning (13012): Latch ALU:M3|acc1[0] has unsafe behavior File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/alu.vhd Line: 22
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CTRL:M2|ALU_AND File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ctrl.vhd Line: 11
+Warning (13012): Latch ALU:M3|acc1[1] has unsafe behavior File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/alu.vhd Line: 22
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CTRL:M2|ALU_AND File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ctrl.vhd Line: 11
+Warning (13012): Latch ALU:M3|acc1[2] has unsafe behavior File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/alu.vhd Line: 22
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CTRL:M2|ALU_AND File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ctrl.vhd Line: 11
+Warning (13012): Latch ALU:M3|acc1[3] has unsafe behavior File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/alu.vhd Line: 22
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CTRL:M2|ALU_AND File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ctrl.vhd Line: 11
+Warning (13012): Latch ALU:M3|acc1[4] has unsafe behavior File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/alu.vhd Line: 22
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CTRL:M2|ALU_AND File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ctrl.vhd Line: 11
+Warning (13012): Latch ALU:M3|acc1[5] has unsafe behavior File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/alu.vhd Line: 22
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CTRL:M2|ALU_SUB File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ctrl.vhd Line: 11
+Warning (13012): Latch ALU:M3|acc1[6] has unsafe behavior File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/alu.vhd Line: 22
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CTRL:M2|ALU_AND File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ctrl.vhd Line: 11
+Warning (13012): Latch ALU:M3|acc1[7] has unsafe behavior File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/alu.vhd Line: 22
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CTRL:M2|ALU_AND File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/ctrl.vhd Line: 11
+Info (13000): Registers with preset signals will power-up high File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/counter.vhd Line: 25
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "r_out[4]" is stuck at GND File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/EightBit.vhd Line: 8
+    Warning (13410): Pin "r_out[5]" is stuck at GND File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/EightBit.vhd Line: 8
+    Warning (13410): Pin "d_out[4]" is stuck at GND File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/EightBit.vhd Line: 8
+    Warning (13410): Pin "d_out[5]" is stuck at GND File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/EightBit.vhd Line: 8
+    Warning (13410): Pin "OUTPUT[7]" is stuck at VCC File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/EightBit.vhd Line: 10
+    Warning (13410): Pin "sel[0]" is stuck at VCC File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/EightBit.vhd Line: 11
+    Warning (13410): Pin "sel[1]" is stuck at VCC File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/EightBit.vhd Line: 11
+Info (286030): Timing-Driven Synthesis is running
+Critical Warning (18061): Ignored Power-Up Level option on the following registers
+    Critical Warning (18010): Register counter:M1|TEMP[0] will power up to High File: C:/Users/ZTL/Desktop/model_computer/EightBit_FPGA/counter.vhd Line: 25
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 248 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 35 output pins
+    Info (21061): Implemented 210 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 123 warnings
+    Info: Peak virtual memory: 4801 megabytes
+    Info: Processing ended: Wed Jun 30 20:27:50 2021
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:40
+
+

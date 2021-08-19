@@ -1,0 +1,62 @@
+# Reading E:/FPGA/modelsim_ase/tcl/vsim/pref.tcl
+# do CLK_Generator_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying E:/FPGA/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/ZTL/Desktop/model_computer/CLK_Generator/CLK_Generator.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:19:22 on Jul 05,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/ZTL/Desktop/model_computer/CLK_Generator/CLK_Generator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity CLK_Generator
+# -- Compiling architecture CLK_Generator_arch of CLK_Generator
+# End time: 18:19:22 on Jul 05,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/ZTL/Desktop/model_computer/CLK_Generator/CLK_Generator_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:19:22 on Jul 05,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/ZTL/Desktop/model_computer/CLK_Generator/CLK_Generator_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity CLK_Generator_tb
+# -- Compiling architecture CLK_Generator_tb_arch of CLK_Generator_tb
+# End time: 18:19:23 on Jul 05,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  CLK_Generator_tb
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" CLK_Generator_tb 
+# Start time: 18:19:23 on Jul 05,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.clk_generator_tb(clk_generator_tb_arch)
+# ** Warning: (vsim-3473) Component instance "EUT : CLK_SOURCE" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /clk_generator_tb File: C:/Users/ZTL/Desktop/model_computer/CLK_Generator/CLK_Generator_tb.vhd
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break key hit
+# Break in Process line__21 at C:/Users/ZTL/Desktop/model_computer/CLK_Generator/CLK_Generator_tb.vhd line 23
+# End time: 18:20:35 on Jul 05,2021, Elapsed time: 0:01:12
+# Errors: 0, Warnings: 1

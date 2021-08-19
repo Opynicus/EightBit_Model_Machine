@@ -1,0 +1,133 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "alu_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "esum",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "acc[0]",
+					"strict" : false
+				},
+				{
+					"name" : "cmd_and",
+					"strict" : false
+				},
+				{
+					"name" : "reg[0]",
+					"strict" : false
+				},
+				{
+					"name" : "cmd_shl",
+					"strict" : false
+				},
+				{
+					"name" : "cmd_add",
+					"strict" : false
+				},
+				{
+					"name" : "cmd_sub",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reg[1]",
+					"strict" : false
+				},
+				{
+					"name" : "acc[1]",
+					"strict" : false
+				},
+				{
+					"name" : "reg[2]",
+					"strict" : false
+				},
+				{
+					"name" : "acc[2]",
+					"strict" : false
+				},
+				{
+					"name" : "reg[3]",
+					"strict" : false
+				},
+				{
+					"name" : "acc[3]",
+					"strict" : false
+				},
+				{
+					"name" : "reg[4]",
+					"strict" : false
+				},
+				{
+					"name" : "acc[4]",
+					"strict" : false
+				},
+				{
+					"name" : "reg[5]",
+					"strict" : false
+				},
+				{
+					"name" : "acc[5]",
+					"strict" : false
+				},
+				{
+					"name" : "reg[6]",
+					"strict" : false
+				},
+				{
+					"name" : "acc[6]",
+					"strict" : false
+				},
+				{
+					"name" : "acc[7]",
+					"strict" : false
+				},
+				{
+					"name" : "reg[7]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

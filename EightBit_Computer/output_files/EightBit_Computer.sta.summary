@@ -1,0 +1,137 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'IR:M8|REGQ[0]'
+Slack : -5.066
+TNS   : -58.687
+
+Type  : Slow 1200mV 85C Model Setup 'CLK_Generator:M0|COUNTER[0]'
+Slack : -4.825
+TNS   : -120.798
+
+Type  : Slow 1200mV 85C Model Setup 'CLK_50Mhz'
+Slack : -1.781
+TNS   : -7.276
+
+Type  : Slow 1200mV 85C Model Hold 'CLK_Generator:M0|COUNTER[0]'
+Slack : 0.109
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'IR:M8|REGQ[0]'
+Slack : 0.381
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CLK_50Mhz'
+Slack : 0.684
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'CLK_50Mhz'
+Slack : -4.439
+TNS   : -22.187
+
+Type  : Slow 1200mV 85C Model Removal 'CLK_50Mhz'
+Slack : 1.508
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK_50Mhz'
+Slack : -3.000
+TNS   : -10.435
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK_Generator:M0|COUNTER[0]'
+Slack : -1.487
+TNS   : -77.324
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'IR:M8|REGQ[0]'
+Slack : 0.444
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'IR:M8|REGQ[0]'
+Slack : -4.750
+TNS   : -55.229
+
+Type  : Slow 1200mV 0C Model Setup 'CLK_Generator:M0|COUNTER[0]'
+Slack : -4.682
+TNS   : -110.223
+
+Type  : Slow 1200mV 0C Model Setup 'CLK_50Mhz'
+Slack : -1.562
+TNS   : -6.263
+
+Type  : Slow 1200mV 0C Model Hold 'CLK_Generator:M0|COUNTER[0]'
+Slack : -0.010
+TNS   : -0.010
+
+Type  : Slow 1200mV 0C Model Hold 'IR:M8|REGQ[0]'
+Slack : 0.240
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLK_50Mhz'
+Slack : 0.655
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'CLK_50Mhz'
+Slack : -4.136
+TNS   : -20.672
+
+Type  : Slow 1200mV 0C Model Removal 'CLK_50Mhz'
+Slack : 1.544
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK_50Mhz'
+Slack : -3.000
+TNS   : -10.435
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK_Generator:M0|COUNTER[0]'
+Slack : -1.487
+TNS   : -77.324
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'IR:M8|REGQ[0]'
+Slack : 0.319
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'CLK_Generator:M0|COUNTER[0]'
+Slack : -1.786
+TNS   : -30.050
+
+Type  : Fast 1200mV 0C Model Setup 'IR:M8|REGQ[0]'
+Slack : -1.577
+TNS   : -16.256
+
+Type  : Fast 1200mV 0C Model Setup 'CLK_50Mhz'
+Slack : -0.671
+TNS   : -2.429
+
+Type  : Fast 1200mV 0C Model Hold 'CLK_Generator:M0|COUNTER[0]'
+Slack : 0.110
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLK_50Mhz'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'IR:M8|REGQ[0]'
+Slack : 0.221
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'CLK_50Mhz'
+Slack : -1.408
+TNS   : -7.035
+
+Type  : Fast 1200mV 0C Model Removal 'CLK_50Mhz'
+Slack : 0.419
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK_50Mhz'
+Slack : -3.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK_Generator:M0|COUNTER[0]'
+Slack : -1.000
+TNS   : -52.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'IR:M8|REGQ[0]'
+Slack : 0.338
+TNS   : 0.000
+
+------------------------------------------------------------

@@ -1,0 +1,127 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/10231/Desktop/szks/pulseGen/simulation/modelsim
+Edff74
+Z1 w1624751384
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/Users/10231/Desktop/szks/pulseGen/dff74.vhd
+Z5 FC:/Users/10231/Desktop/szks/pulseGen/dff74.vhd
+l0
+L3
+VLao=IgSlU]?_KOSocH5n80
+!s100 PYh_R`eoL<BMmoni2]6k:0
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1624851809
+!i10b 1
+Z8 !s108 1624851809.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/10231/Desktop/szks/pulseGen/dff74.vhd|
+Z10 !s107 C:/Users/10231/Desktop/szks/pulseGen/dff74.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Aard
+R2
+R3
+DEx4 work 5 dff74 0 22 Lao=IgSlU]?_KOSocH5n80
+l11
+L10
+V_[Rge_OaFFVDlHK_bn=IK1
+!s100 1S]:6DElc@QDOT78Zh[[A0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Epulsegen
+Z13 w1624850626
+R2
+R3
+R0
+Z14 8C:/Users/10231/Desktop/szks/pulseGen/pulseGen.vhd
+Z15 FC:/Users/10231/Desktop/szks/pulseGen/pulseGen.vhd
+l0
+L3
+Vh579VHkcQAT>zR4cH0`NW3
+!s100 6zfR0>ZLC6HOPh^0Z5PeY0
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/10231/Desktop/szks/pulseGen/pulseGen.vhd|
+Z17 !s107 C:/Users/10231/Desktop/szks/pulseGen/pulseGen.vhd|
+!i113 1
+R11
+R12
+Abdf
+R2
+R3
+DEx4 work 8 pulsegen 0 22 h579VHkcQAT>zR4cH0`NW3
+l18
+L8
+VHXF?ND8MH<zQY@59I:K^30
+!s100 ?Q]i4hhT]S9TjR6bCZZY[0
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Epulsegen_tb
+Z18 w1624848187
+R2
+R3
+R0
+Z19 8C:/Users/10231/Desktop/szks/pulseGen/simulation/modelsim/pulseGen_TB.vhd
+Z20 FC:/Users/10231/Desktop/szks/pulseGen/simulation/modelsim/pulseGen_TB.vhd
+l0
+L4
+V;:19a=?N`Rh9];Il?@bek0
+!s100 W=856i0:f^QP?Mm[[I<303
+R6
+31
+R7
+!i10b 1
+R8
+Z21 !s90 -reportprogress|300|-93|-work|work|C:/Users/10231/Desktop/szks/pulseGen/simulation/modelsim/pulseGen_TB.vhd|
+Z22 !s107 C:/Users/10231/Desktop/szks/pulseGen/simulation/modelsim/pulseGen_TB.vhd|
+!i113 1
+R11
+R12
+Apulsegen_arch
+R2
+R3
+DEx4 work 11 pulsegen_tb 0 22 ;:19a=?N`Rh9];Il?@bek0
+l33
+L6
+VP>EaTe[]>W5Sg]jIzETDN1
+!s100 B^gTUY0e1`Mo;WWJYK<gS2
+R6
+31
+R7
+!i10b 1
+R8
+R21
+R22
+!i113 1
+R11
+R12

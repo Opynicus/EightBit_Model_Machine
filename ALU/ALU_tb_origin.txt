@@ -1,0 +1,138 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity ALU_tb is
+end ALU_tb;
+
+architecture ALU_tb_type of ALU_tb is
+signal clk: std_logic:='0';	
+signal sum: std_logic:='1';
+signal sum_a: std_logic:='1';
+signal sum_b: std_logic:='1';
+signal shr: std_logic:='1';
+signal shl: std_logic:='1';
+signal esum: std_logic:='1';
+signal reg_a: std_logic_vector(7 downto 0):="00000000";
+signal reg_b: std_logic_vector(7 downto 0):="00000000";
+signal dbus: std_logic_vector(7 downto 0):="00000000";
+signal alu_out: std_logic_vector(7 downto 0);
+
+component ALU
+    port(	clk: in std_logic;											-- 时钟信号
+			sum: in std_logic;											-- 将寄存器AX和BX值相加
+			sum_a: in std_logic;											-- 将寄存器AX值加上数据总线内容
+			sum_b: in std_logic;											-- 将寄存器BX值加上数据总线内容
+			shr: in std_logic;											-- 将数据总线值右移
+			shl: in std_logic;											-- 将数据总线值左移
+			esum: in std_logic;											-- 输出控制命令
+			reg_a: in std_logic_vector(7 downto 0);				-- 寄存器AX内容
+			reg_b: in std_logic_vector(7 downto 0);				-- 寄存器BX内容
+			dbus: in std_logic_vector(7 downto 0);					-- 数据总线内容
+			alu_out: out std_logic_vector(7 downto 0));			-- 计算结果
+end component;
+
+begin
+	DUT:ALU port map
+        (
+            clk=>clk,
+            sum=>sum,
+            sum_a=>sum_a,
+            sum_b=>sum_b,
+            shr=>shr,
+            shl=>shl,
+            esum=>esum,
+            reg_a=>reg_a,
+            reg_b=>reg_b,
+            dbus=>dbus,
+            alu_out=>alu_out
+
+        );
+
+        process
+        begin
+            wait for 20ns;clk<='1';
+            wait for 20ns;clk<='0';
+        end process;
+
+        process
+        begin
+            wait for 30 ns;reg_a<="00100011";
+            wait for 30 ns;reg_a<="00000000";
+            wait for 60 ns;reg_a<="01000011";
+            wait for 140 ns;reg_a<="00000000";
+            wait for 40 ns;reg_a<="00000000";
+        end process;
+
+        process
+        begin
+            wait for 30 ns;reg_b<="01000101";
+            wait for 30 ns;reg_b<="00000000";
+            wait for 100 ns;reg_b<="00100001";
+            wait for 50 ns;reg_b<="00000000";
+            wait for 90 ns;reg_b<="00000000";
+        end process;
+
+        process
+        begin
+            wait for 40 ns;sum<='0';
+            wait for 40 ns;sum<='1';
+            wait for 80 ns;sum<='0';
+            wait for 50 ns;sum<='1';
+            wait for 90 ns;sum<='1';
+        end process;
+
+        process
+        begin
+            wait for 60 ns;sum_a<='1';
+            wait for 50 ns;sum_a<='0';
+            wait for 70 ns;sum_a<='1';
+            wait for 50 ns;sum_a<='0';
+            wait for 90 ns;sum_a<='0';
+        end process;
+
+        process
+        begin
+            wait for 50 ns;sum_b<='0';
+            wait for 70 ns;sum_b<='1';
+            wait for 80 ns;sum_b<='0';
+            wait for 50 ns;sum_b<='0';
+            wait for 60 ns;sum_b<='1';
+        end process;
+
+        process
+        begin
+            wait for 30 ns;shr<='0';
+            wait for 30 ns;shr<='1';
+            wait for 50 ns;shr<='0';
+            wait for 80 ns;shr<='1';
+            wait for 90 ns;shr<='1';
+        end process;
+
+        process
+        begin
+            wait for 40 ns;shl<='1';
+            wait for 60 ns;shl<='0';
+            wait for 50 ns;shl<='1';
+            wait for 90 ns;shl<='0';
+            wait for 70 ns;shl<='0';
+        end process;
+
+        process
+        begin
+            wait for 90 ns;esum<='0';
+            wait for 30 ns;esum<='1';
+            wait for 20 ns;esum<='0';
+            wait for 120 ns;esum<='1';
+            wait for 40 ns;esum<='1';
+        end process;
+
+        process
+        begin
+            wait for 60 ns;dbus<="00000011";
+            wait for 40 ns;dbus<="00000000";
+            wait for 50 ns;dbus<="01000011";
+            wait for 70 ns;dbus<="00000000";
+            wait for 40 ns;dbus<="00000000";
+        end process;
+end ALU_tb_type;

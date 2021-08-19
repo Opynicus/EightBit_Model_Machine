@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ZTL/Desktop/model_computer/ALU/simulation/modelsim
+Ealu
+Z1 w1624876352
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z6 8C:/Users/ZTL/Desktop/model_computer/ALU/ALU.vhd
+Z7 FC:/Users/ZTL/Desktop/model_computer/ALU/ALU.vhd
+l0
+L6
+VOT2B`[9DGdiQI3^EaF;Cz1
+!s100 j>AY[B=<?nOAe77g<C33U3
+Z8 OV;C;10.5b;63
+31
+Z9 !s110 1625478455
+!i10b 1
+Z10 !s108 1625478455.000000
+Z11 !s90 -reportprogress|300|-93|-work|work|C:/Users/ZTL/Desktop/model_computer/ALU/ALU.vhd|
+Z12 !s107 C:/Users/ZTL/Desktop/model_computer/ALU/ALU.vhd|
+!i113 1
+Z13 o-93 -work work
+Z14 tExplicit 1 CvgOpt 0
+Aalu_arch
+R2
+R3
+R4
+R5
+DEx4 work 3 alu 0 22 OT2B`[9DGdiQI3^EaF;Cz1
+l23
+L21
+V_WI7N]CX]<T[d5NW7C9N@2
+!s100 ba;KaKSd`GlQnL60`:5OU0
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Ealu_tb
+Z15 w1625478253
+Z16 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R4
+R5
+R0
+Z17 8C:/Users/ZTL/Desktop/model_computer/ALU/ALU_tb.vhd
+Z18 FC:/Users/ZTL/Desktop/model_computer/ALU/ALU_tb.vhd
+l0
+L5
+V0<fP6o:I7?g:`M1IJmaQ@1
+!s100 n>hbB`=Z7V]ULhfmL4blo3
+R8
+31
+R9
+!i10b 1
+R10
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/ZTL/Desktop/model_computer/ALU/ALU_tb.vhd|
+Z20 !s107 C:/Users/ZTL/Desktop/model_computer/ALU/ALU_tb.vhd|
+!i113 1
+R13
+R14
+Aalu_tb_arch
+R16
+R4
+R5
+DEx4 work 6 alu_tb 0 22 0<fP6o:I7?g:`M1IJmaQ@1
+l34
+L8
+VI3K8@[k<mWAZlGMYOm8BV3
+!s100 Qo9<G=gchhUFU0KT3<]Qf1
+R8
+31
+R9
+!i10b 1
+R10
+R19
+R20
+!i113 1
+R13
+R14

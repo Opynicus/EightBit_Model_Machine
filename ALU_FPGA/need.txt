@@ -1,0 +1,121 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+entity ALU_FPGA is  
+port(
+	reset:in std_logic;
+	key1:in std_logic;
+	key2:in std_logic;
+	key3:in std_logic;
+	alu_out:out std_logic_vector(7 downto 0);--alu计算结果 	
+	led1:out std_logic;
+	led2:out std_logic;
+	led3:out std_logic
+	); 
+end ALU_FPGA;
+
+architecture ALU_arch of ALU_FPGA is
+	signal acc1:std_logic_vector(7 downto 0);
+	signal reset:std_logic;
+	signal acc:std_logic_vector(7 downto 0);--累加器 	
+	signal mdr:std_logic_vector(7 downto 0);--数据寄存器
+	signal rrr:std_logic_vector(7 downto 0);--r寄存器 	
+	signal mdr_or_r:std_logic;--直接寻址还是间接寻址 即用rrr还是mdr，0用mdr，1用rrr 	
+	signal cmd_add:std_logic;--add加 	
+	signal cmd_sub:std_logic;--sub减 	
+	signal cmd_and:std_logic;--and与 	
+	signal cmd_shl:std_logic;--srl左移 
+	signal temp:std_logic;	
+	signal clk:std_logic;
+	signal hex_0,hex_1 :std_logic_vector(7 downto 0 );
+	signal cout :std_logic_vector( 7 downto 0 );--输出八位
+	signal se : std_logic_vector( 3 downto 0 )  --选择输出译码管
+component decode is
+		port (	clk : in std_logic;--时钟信号输入端
+				output:in std_logic_vector(7 downto 0);--最大255
+				hex_0,hex_1 : buffer std_logic_vector( 7 downto 0 )--编码输出
+				);
+end component;
+component display is
+			port
+			(
+				clk_50m : in std_logic;--50M晶振脉冲输入
+				--mode:in bit_vector(2 downto 0);
+				hex_0,hex_1 : in std_logic_vector( 7 downto 0 );--output
+				cout : buffer std_logic_vector( 7 downto 0 );--输出八位
+				se : out std_logic_vector( 3 downto 0 )  --选择输出译码管
+			);
+end component;
+begin
+reset<='1';
+acc<="00000101";--累加器 	
+mdr<="00001110";--数据寄存器
+rrr<="00000010";--r寄存器 	
+mdr_or_r<='1';--直接寻址还是间接寻址 即用rrr还是mdr，0用mdr，1用rrr 	
+	
+	process(key1,key2,key3)
+		begin
+		if key2='1' then
+			if key3='1' then
+				cmd_add<='1';
+				cmd_sub<='0';
+				cmd_and<='0';
+				cmd_shl<='0';
+			else--10
+				cmd_add<='0';
+				cmd_sub<='1';
+				cmd_and<='0';
+				cmd_shl<='0';
+			end if;
+		else
+			if key3='1' then--01
+				cmd_add<='0';
+				cmd_sub<='0';
+				cmd_and<='1';
+				cmd_shl<='0';
+			else--00
+				cmd_add<='0';
+				cmd_sub<='0';
+				cmd_and<='0';
+				cmd_shl<='1';
+			end if;
+		end if;
+		if reset='0' then
+			alu_out<="00000000";
+		else
+			if key1='1' then
+				if cmd_add='1' then
+					acc1<=acc+mdr;--累加器内容为它本身加上数据寄存器内容
+				elsif cmd_sub='1' then
+					acc1<=acc-mdr; 			
+				elsif cmd_and='1' then
+					acc1<=acc and mdr; 			
+				elsif cmd_shl='1' then				
+					acc1<=acc(6 downto 0)&'0';
+				else
+					acc1<=acc;
+				end if;
+			else
+				if cmd_add='1' then
+					acc1<=acc+rrr;--累加器内容为它本身加上数据寄存器内容
+				elsif cmd_sub='1' then
+					acc1<=acc-rrr; 			
+				elsif cmd_and='1' then
+					acc1<=acc and rrr; 			
+				elsif cmd_shl='1' then				
+					acc1<=acc(6 downto 0)&'0';
+				else
+					acc1<=acc;
+				end if;
+			end if;
+			D1:decode port map(clk,acc1,hex_0,hex_1);
+			D2:display port map(clk,hex_0,hex_1,cout,se);
+			alu_out<=acc1;
+			led1<=acc1(0);
+			led2<=acc1(1);
+			led3<=acc1(2);
+		end if;
+	end process;
+end ALU_arch;

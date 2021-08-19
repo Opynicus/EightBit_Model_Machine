@@ -1,0 +1,508 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ZTL/Desktop/model_computer/EightBit_Computer/simulation/modelsim
+Eacc
+Z1 w1623052762
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/acc.vhd
+Z5 FC:/Users/ZTL/Desktop/model_computer/EightBit_Computer/acc.vhd
+l0
+L4
+Vd8LNnMH8F3z:6mMc2[R9V0
+!s100 L0BTgb[hz8>9nH]kDMm=a3
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1625901123
+!i10b 1
+Z8 !s108 1625901123.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/acc.vhd|
+Z10 !s107 C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/acc.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Aacc_arch
+R2
+R3
+DEx4 work 3 acc 0 22 d8LNnMH8F3z:6mMc2[R9V0
+l15
+L13
+VT4bg@HW<;`1EhZQoGeGgZ0
+!s100 [FMBfSdjH8XTUT;0CFJ`l2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ealu
+Z13 w1625142467
+Z14 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z15 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+R2
+R3
+R0
+Z16 8C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/alu.vhd
+Z17 FC:/Users/ZTL/Desktop/model_computer/EightBit_Computer/alu.vhd
+l0
+L6
+VnX:E6`j^EiZ>B:7^VAoQ32
+!s100 <@2NcQWH[HIYAO>6QV3Z63
+R6
+31
+R7
+!i10b 1
+R8
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/alu.vhd|
+Z19 !s107 C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/alu.vhd|
+!i113 1
+R11
+R12
+Aalu_arch
+R14
+R15
+R2
+R3
+DEx4 work 3 alu 0 22 nX:E6`j^EiZ>B:7^VAoQ32
+l28
+L26
+VNXFC7I@?2Xe2cm3N;9KDS3
+!s100 WLkJ4aSAmO_JC:e>60QB80
+R6
+31
+R7
+!i10b 1
+R8
+R18
+R19
+!i113 1
+R11
+R12
+Eclk_generator
+Z20 w1623054418
+R2
+R3
+R0
+Z21 8C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/clk_generator.vhd
+Z22 FC:/Users/ZTL/Desktop/model_computer/EightBit_Computer/clk_generator.vhd
+l0
+L4
+V?gTWh^RCB;=9h:e^Z3K[11
+!s100 V;3UeMVQDj1zGnkFl=j:C3
+R6
+31
+Z23 !s110 1625901122
+!i10b 1
+Z24 !s108 1625901121.000000
+Z25 !s90 -reportprogress|300|-93|-work|work|C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/clk_generator.vhd|
+Z26 !s107 C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/clk_generator.vhd|
+!i113 1
+R11
+R12
+Aclk_generator_arch
+R2
+R3
+DEx4 work 13 clk_generator 0 22 ?gTWh^RCB;=9h:e^Z3K[11
+l12
+L10
+V6d_fMGOR_Da@Kz7K_Eobz1
+!s100 06PYJgPJI7k_4IzHcdFQo0
+R6
+31
+R23
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R11
+R12
+Ecounter
+Z27 w1623053289
+R14
+R15
+R2
+R3
+R0
+Z28 8C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/counter.vhd
+Z29 FC:/Users/ZTL/Desktop/model_computer/EightBit_Computer/counter.vhd
+l0
+L6
+VXLRVaIMd`OCI^ZOialWig0
+!s100 2E<4Sgo^z<X1:gXD`JI1o2
+R6
+31
+R23
+!i10b 1
+Z30 !s108 1625901122.000000
+Z31 !s90 -reportprogress|300|-93|-work|work|C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/counter.vhd|
+Z32 !s107 C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/counter.vhd|
+!i113 1
+R11
+R12
+Acounter_arch
+R14
+R15
+R2
+R3
+DEx4 work 7 counter 0 22 XLRVaIMd`OCI^ZOialWig0
+l14
+L12
+VcUYffXLA_o6DmZ[^c^O2_1
+!s100 on?3VPMF9fFzAA[AY9NV23
+R6
+31
+R23
+!i10b 1
+R30
+R31
+R32
+!i113 1
+R11
+R12
+Ectrl
+Z33 w1625143155
+R14
+R15
+R2
+R3
+R0
+Z34 8C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/ctrl.vhd
+Z35 FC:/Users/ZTL/Desktop/model_computer/EightBit_Computer/ctrl.vhd
+l0
+L6
+Va:e2mWTS@W4c^@T<bGFRf2
+!s100 aNV7RZ4aVfK9f9R8_ANz]0
+R6
+31
+R7
+!i10b 1
+R30
+Z36 !s90 -reportprogress|300|-93|-work|work|C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/ctrl.vhd|
+Z37 !s107 C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/ctrl.vhd|
+!i113 1
+R11
+R12
+Actrl_arch
+R14
+R15
+R2
+R3
+DEx4 work 4 ctrl 0 22 a:e2mWTS@W4c^@T<bGFRf2
+l15
+L14
+V1>1h2Z2bE[9gi1j_jzNT50
+!s100 `ocLTQjS>IcY@?69@;z6g2
+R6
+31
+R7
+!i10b 1
+R30
+R36
+R37
+!i113 1
+R11
+R12
+Edr
+Z38 w1623056704
+R2
+R3
+R0
+Z39 8C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/dr.vhd
+Z40 FC:/Users/ZTL/Desktop/model_computer/EightBit_Computer/dr.vhd
+l0
+L3
+VQV8iPki[6VEe9GY0jPI<63
+!s100 zUgb[TKglSAcaa71^oaER0
+R6
+31
+Z41 !s110 1625901124
+!i10b 1
+Z42 !s108 1625901124.000000
+Z43 !s90 -reportprogress|300|-93|-work|work|C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/dr.vhd|
+Z44 !s107 C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/dr.vhd|
+!i113 1
+R11
+R12
+Adr_arch
+R2
+R3
+DEx4 work 2 dr 0 22 QV8iPki[6VEe9GY0jPI<63
+l13
+L11
+VC`2=C;T[>TlXQnd>Fc^Q[0
+!s100 5?mi]Oglz=4cGj>ZobC>f2
+R6
+31
+R41
+!i10b 1
+R42
+R43
+R44
+!i113 1
+R11
+R12
+Eeightbit_computer
+Z45 w1625143815
+R14
+R15
+R2
+R3
+R0
+Z46 8C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/eightbit_computer.vhd
+Z47 FC:/Users/ZTL/Desktop/model_computer/EightBit_Computer/eightbit_computer.vhd
+l0
+L6
+VAR9j8Adj??XlnLWAT:QFi3
+!s100 <IF`d]QE90R6hA<?z7anZ1
+R6
+31
+Z48 !s110 1625901121
+!i10b 1
+R24
+Z49 !s90 -reportprogress|300|-93|-work|work|C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/eightbit_computer.vhd|
+Z50 !s107 C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/eightbit_computer.vhd|
+!i113 1
+R11
+R12
+Aeightbit_computer_arch
+R14
+R15
+R2
+R3
+DEx4 work 17 eightbit_computer 0 22 AR9j8Adj??XlnLWAT:QFi3
+l110
+L16
+VmP3BdFFeSV=[LeX^YkJ[l3
+!s100 1;]<^I=SKJeQ:knbW[@`:2
+R6
+31
+R48
+!i10b 1
+R24
+R49
+R50
+!i113 1
+R11
+R12
+Eeightbit_computer_tb
+Z51 w1625139068
+Z52 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R15
+R14
+R2
+R3
+R0
+Z53 8C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/EightBit_Computer_tb.vhd
+Z54 FC:/Users/ZTL/Desktop/model_computer/EightBit_Computer/EightBit_Computer_tb.vhd
+l0
+L5
+VK28cdVfYV3bj4@aHzMBTV1
+!s100 ZYQ:^268d_g@jFo<^GlDe0
+R6
+31
+Z55 !s110 1625901126
+!i10b 1
+Z56 !s108 1625901126.000000
+Z57 !s90 -reportprogress|300|-93|-work|work|C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/EightBit_Computer_tb.vhd|
+Z58 !s107 C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/EightBit_Computer_tb.vhd|
+!i113 1
+R11
+R12
+Aeightbit_computer_tb_arch
+R52
+R15
+R14
+R2
+R3
+DEx4 work 20 eightbit_computer_tb 0 22 K28cdVfYV3bj4@aHzMBTV1
+l22
+L8
+VC5@]eXO8C55FCdQfTG7fA0
+!s100 P=R2i[En7_A=aY]DAVon23
+R6
+31
+R55
+!i10b 1
+R56
+R57
+R58
+!i113 1
+R11
+R12
+Eir
+Z59 w1625142131
+R2
+R3
+R0
+Z60 8C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/ir.vhd
+Z61 FC:/Users/ZTL/Desktop/model_computer/EightBit_Computer/ir.vhd
+l0
+L3
+VJc4CL3efWFI1_CBjII1hf0
+!s100 T9G6:nzSNM:=E2XPH:18N0
+R6
+31
+Z62 !s110 1625901125
+!i10b 1
+Z63 !s108 1625901125.000000
+Z64 !s90 -reportprogress|300|-93|-work|work|C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/ir.vhd|
+Z65 !s107 C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/ir.vhd|
+!i113 1
+R11
+R12
+Air_arch
+R2
+R3
+DEx4 work 2 ir 0 22 Jc4CL3efWFI1_CBjII1hf0
+l13
+L11
+V<Nhd4<]eh7_g_N8X23LZ=0
+!s100 QH?<WcBcX@A:CT6bz=^;l2
+R6
+31
+R62
+!i10b 1
+R63
+R64
+R65
+!i113 1
+R11
+R12
+Emar
+Z66 w1625143766
+R2
+R3
+R0
+Z67 8C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/mar.vhd
+Z68 FC:/Users/ZTL/Desktop/model_computer/EightBit_Computer/mar.vhd
+l0
+L3
+VLSeX;`dRV:0J3^6bWd6LU2
+!s100 do5jKiYYh02HFVacn^oK63
+R6
+31
+R62
+!i10b 1
+R42
+Z69 !s90 -reportprogress|300|-93|-work|work|C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/mar.vhd|
+Z70 !s107 C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/mar.vhd|
+!i113 1
+R11
+R12
+Amar_arch
+R2
+R3
+DEx4 work 3 mar 0 22 LSeX;`dRV:0J3^6bWd6LU2
+l12
+L11
+V4?`2VI8WD4<QWAa5UgmBc0
+!s100 Aka^`c4JjFUAC6Sj=4FR]2
+R6
+31
+R62
+!i10b 1
+R42
+R69
+R70
+!i113 1
+R11
+R12
+Epc
+Z71 w1625143776
+R14
+R15
+R2
+R3
+R0
+Z72 8C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/pc.vhd
+Z73 FC:/Users/ZTL/Desktop/model_computer/EightBit_Computer/pc.vhd
+l0
+L5
+VnLbU0]B;_VAd1ZUGdf6HD1
+!s100 BEc=8=hJ:V9P5=Fo:haH`1
+R6
+31
+R41
+!i10b 1
+R42
+Z74 !s90 -reportprogress|300|-93|-work|work|C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/pc.vhd|
+Z75 !s107 C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/pc.vhd|
+!i113 1
+R11
+R12
+Apc_arch
+R14
+R15
+R2
+R3
+DEx4 work 2 pc 0 22 nLbU0]B;_VAd1ZUGdf6HD1
+l13
+L11
+V]5nNzQ2MkaGzzRVB:ZAHN2
+!s100 Pz8QD35^KS1oeoSm8VHG_2
+R6
+31
+R41
+!i10b 1
+R42
+R74
+R75
+!i113 1
+R11
+R12
+Eram
+Z76 w1625879747
+R14
+R15
+R2
+R3
+R0
+Z77 8C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/ram.vhd
+Z78 FC:/Users/ZTL/Desktop/model_computer/EightBit_Computer/ram.vhd
+l0
+L6
+Vnjh4Y_B7[CUoHjNbJK7JR3
+!s100 Un=]ZVhbaBmdhDMSGC`Tg1
+R6
+31
+R62
+!i10b 1
+R63
+Z79 !s90 -reportprogress|300|-93|-work|work|C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/ram.vhd|
+Z80 !s107 C:/Users/ZTL/Desktop/model_computer/EightBit_Computer/ram.vhd|
+!i113 1
+R11
+R12
+Aram_arch
+R14
+R15
+R2
+R3
+DEx4 work 3 ram 0 22 njh4Y_B7[CUoHjNbJK7JR3
+l16
+L14
+V>cF8]XzO7YTbKjTdM5Fml3
+!s100 ]b`ae5@ec:bobBM6cZ@;X2
+R6
+31
+R62
+!i10b 1
+R63
+R79
+R80
+!i113 1
+R11
+R12

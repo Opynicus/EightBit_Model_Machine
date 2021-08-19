@@ -1,0 +1,165 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "clk_out",
+					"strict" : false
+				},
+				{
+					"name" : "r_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "r_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "r_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "r_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "r_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "r_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "r_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "r_out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "d_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "d_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "d_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "d_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "d_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "d_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "d_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "d_out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "cmd_LD1",
+					"strict" : false
+				},
+				{
+					"name" : "cmd_add1",
+					"strict" : false
+				},
+				{
+					"name" : "cmd_sub1",
+					"strict" : false
+				},
+				{
+					"name" : "cmd_and1",
+					"strict" : false
+				},
+				{
+					"name" : "cmd_or1",
+					"strict" : false
+				},
+				{
+					"name" : "cmd_xor1",
+					"strict" : false
+				},
+				{
+					"name" : "cmd_not1",
+					"strict" : false
+				},
+				{
+					"name" : "cmd_neg1",
+					"strict" : false
+				},
+				{
+					"name" : "cmd_shl1",
+					"strict" : false
+				},
+				{
+					"name" : "cmd_shr1",
+					"strict" : false
+				},
+				{
+					"name" : "HALT1",
+					"strict" : false
+				},
+				{
+					"name" : "OUTPUT[0]",
+					"strict" : false
+				},
+				{
+					"name" : "OUTPUT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "OUTPUT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "OUTPUT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "OUTPUT[4]",
+					"strict" : false
+				},
+				{
+					"name" : "OUTPUT[5]",
+					"strict" : false
+				},
+				{
+					"name" : "OUTPUT[6]",
+					"strict" : false
+				},
+				{
+					"name" : "OUTPUT[7]",
+					"strict" : false
+				},
+				{
+					"name" : "CLK_50Mhz",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "CLR",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

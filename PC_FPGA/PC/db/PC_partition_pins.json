@@ -1,0 +1,37 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "PCOUT[0]",
+					"strict" : false
+				},
+				{
+					"name" : "PCOUT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "PCOUT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "PCOUT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "IPC",
+					"strict" : false
+				},
+				{
+					"name" : "CLR",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

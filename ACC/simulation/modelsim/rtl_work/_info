@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ZTL/Desktop/model_computer/ACC/simulation/modelsim
+Eacc
+Z1 w1623052762
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/Users/ZTL/Desktop/model_computer/ACC/ACC.vhd
+Z5 FC:/Users/ZTL/Desktop/model_computer/ACC/ACC.vhd
+l0
+L4
+Vd8LNnMH8F3z:6mMc2[R9V0
+!s100 L0BTgb[hz8>9nH]kDMm=a3
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1625475948
+!i10b 1
+Z8 !s108 1625475948.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/ZTL/Desktop/model_computer/ACC/ACC.vhd|
+Z10 !s107 C:/Users/ZTL/Desktop/model_computer/ACC/ACC.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Aacc_arch
+R2
+R3
+DEx4 work 3 acc 0 22 d8LNnMH8F3z:6mMc2[R9V0
+l15
+L13
+VT4bg@HW<;`1EhZQoGeGgZ0
+!s100 [FMBfSdjH8XTUT;0CFJ`l2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eacc_tb
+Z13 w1625014179
+Z14 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z15 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z16 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R2
+R3
+R0
+Z17 8C:/Users/ZTL/Desktop/model_computer/ACC/ACC_tb.vhd
+Z18 FC:/Users/ZTL/Desktop/model_computer/ACC/ACC_tb.vhd
+l0
+L5
+V6GNoYAO:Ni^b^Kz9SLoUA0
+!s100 T6lgUQ`VIeSe@5jD6R[fZ1
+R6
+31
+R7
+!i10b 1
+R8
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/ZTL/Desktop/model_computer/ACC/ACC_tb.vhd|
+Z20 !s107 C:/Users/ZTL/Desktop/model_computer/ACC/ACC_tb.vhd|
+!i113 1
+R11
+R12
+Aacc_tb_arch
+R14
+R15
+R16
+R2
+R3
+DEx4 work 6 acc_tb 0 22 6GNoYAO:Ni^b^Kz9SLoUA0
+l22
+L7
+VT7;g=EOE=OVP@^7l348HF0
+!s100 <_5>mfmmPO@aiU45>7?eB1
+R6
+31
+R7
+!i10b 1
+R8
+R19
+R20
+!i113 1
+R11
+R12

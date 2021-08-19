@@ -1,0 +1,89 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "alu_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "c_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "c_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "c_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "c_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "c_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "c_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "c_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "sel[2]",
+					"strict" : false
+				},
+				{
+					"name" : "sel[3]",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "cmd_add",
+					"strict" : false
+				},
+				{
+					"name" : "cmd_sub",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "cmd_shl",
+					"strict" : false
+				},
+				{
+					"name" : "cmd_and",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
