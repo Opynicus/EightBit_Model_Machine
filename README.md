@@ -1,3 +1,3 @@
-# EightBit_Model_Machine
+# 数电课设八位模型机
 
-数电课设
+数电课设八位模型机
